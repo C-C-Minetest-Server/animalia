@@ -782,7 +782,6 @@ local function assign_biome_group(name)
 		and humidity <= params.max_humidity
 		and (not params.min_height or y_min >= params.min_height)
 		and (not params.max_height or y_max <= params.max_height) then
-			print(name .. " -> " .. group)
 			table.insert(animalia.registered_biome_groups[group].biomes, name)
 		end
 	end
