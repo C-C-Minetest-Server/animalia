@@ -992,7 +992,7 @@ creatura.register_utility("animalia:basic_breed", function(self)
 
 			for _ = 1, mob.birth_count or 1 do
 				if mob.add_child then
-					mob:add_child(mate_entity)
+					mob:add_child(mate)
 				else
 					local object = minetest.add_entity(pos, mob.name)
 					local ent = object:get_luaentity()
